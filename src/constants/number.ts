@@ -1,0 +1,3 @@
+export const DEFAULT_LOGICAL_VALUE = 0;
+export const DEFAULT_POSITIVE_VALUE = 1;
+export const DEFAULT_NEGATIVE_VALUE = -1;

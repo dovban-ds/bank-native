@@ -1,6 +1,32 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "moduleSuffixes": [".ios", ".android", ".native", ""],
+    "baseUrl": ".",
+    "paths": {
+      "assets/*": ["src/assets/*"],
+      "images/*": ["src/assets/images/*"],
+      "components/*": ["src/components/*"],
+      "services": ["src/services/index"],
+      "services/*": ["src/services/*"],
+      "constants/*": ["src/constants/*"],
+      "config": ["src/config/index"],
+      "config/*": ["src/config/*"],
+      "store/*": ["src/store/*"],
+      "screens": ["src/screens/index"],
+      "screens/*": ["src/screens/*"],
+      "models/*": ["src/models/*"],
+      "helpers": ["src/helpers/index"],
+      "helpers/*": ["src/helpers/*"],
+      "navigation/*": ["src/navigation/*"],
+      "providers/*": ["src/providers/*"],
+      "utils/*": ["src/utils/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
 }
