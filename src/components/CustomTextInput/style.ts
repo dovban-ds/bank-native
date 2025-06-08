@@ -1,3 +1,6 @@
+import { StyleSheet } from "react-native";
+import { isAndroid, isIOS } from "utils/platform";
+
 import {
   COLOR_WHITE,
   DEFAULT_BORDER_RADIUS,
@@ -7,8 +10,6 @@ import {
   FONT_DEFAULT_SEMIBOLD,
   MIDDLE_SPACING,
 } from "constants/styles";
-import { StyleSheet } from "react-native";
-import { isAndroid, isIOS } from "utils/platform";
 
 export const style = StyleSheet.create({
   container: {

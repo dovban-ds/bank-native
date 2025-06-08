@@ -8,8 +8,10 @@ import Animated, {
   withSpring,
   Easing,
 } from "react-native-reanimated";
-import { style } from "./style";
+
 import { ErrorIcon } from "assets/icons/ErrorIcon";
+
+import { style } from "./style";
 
 type AnimatetMessageProp = {
   error: ErrorOption;
@@ -26,7 +28,6 @@ export const AnimatedMessage: React.FC<AnimatetMessageProp> = ({
 
   useEffect(() => {
     if (error) {
-      // Анимация появления с пружинным эффектом
       height.value = withSpring(32, {
         damping: 12,
         stiffness: 100,
@@ -40,7 +41,6 @@ export const AnimatedMessage: React.FC<AnimatetMessageProp> = ({
         stiffness: 100,
       });
     } else {
-      // Анимация исчезновения
       opacity.value = withTiming(0, {
         duration: 200,
         easing: Easing.in(Easing.quad),

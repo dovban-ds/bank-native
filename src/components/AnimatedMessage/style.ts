@@ -1,11 +1,10 @@
+import { StyleSheet } from "react-native";
+
 import {
   COLOR_RED,
-  EXTRA_SMALL_SPACING,
   FONT_DEFAULT_MEDIUM,
-  MIDDLE_SPACING,
   SMALL_ITEGER_SPACING,
 } from "constants/styles";
-import { StyleSheet } from "react-native";
 
 export const style = StyleSheet.create({
   errorBlock: {
